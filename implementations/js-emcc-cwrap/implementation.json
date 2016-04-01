@@ -1,0 +1,13 @@
+{
+    "type": "implementation",
+    "short-name":"js-emcc-cwrap",
+    "description":"JS implementation compiled from C using Emscripten and called through the cwrap interface for every number generated",
+    "language":"js",
+    "core-source-files":[
+        { "file": "./mt.js" }
+    ],
+    "runner-source-file": { "file": "./runner.js" },
+    "runner-arguments": [
+        { "expand": "/experiment/input-size" }
+    ]
+}

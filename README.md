@@ -14,11 +14,14 @@ Benchmark to compare the speed for generating doubles with the Mersenne Twister 
 
 |implementation   | compiler    | environment | mean     | std      | repetitions|
 |---------------- | ----------- | ----------- | -------- | -------- | -----------|
-|js-emcc-cwrap    | none-js     | chrome      | 2.5270s  | +-1.30%  | 5          |
-|js-emcc-cwrap    | none-js     | firefox     | 12.7232s | +-7.51%  | 5          |
-|js-emcc-cwrap    | none-js     | safari      | 2.7666s  | +-6.44%  | 5          |
-|js-emcc-no-cwrap | none-js     | chrome      | 2.3925s  | +-1.10%  | 5          |
-|js-emcc-no-cwrap | none-js     | firefox     | 1.5182s  | +-5.53%  | 5          |
-|js-emcc-no-cwrap | none-js     | safari      | 2.6040s  | +-6.92%  | 5          |
-|c                | gcc         | native      | 1.1758s  | +-1.60%  | 5          |
-|matlab           | none-matlab | matlab-vm   | 3.0097s  | +-56.10% | 5          |
+|matlab           | none-matlab | matlab-vm   | 4.7279s  | +-10.20% | 5          |
+|js               | browserify  | chrome      | 9.7367s  | +-11.86% | 5          |
+|js               | browserify  | firefox     | 12.0646s | +-5.80%  | 5          |
+|js               | browserify  | safari      | 5.4384s  | +-23.36% | 5          |
+|c                | gcc         | native      | 1.2894s  | +-1.37%  | 5          |
+|js-emcc-cwrap    | browserify  | chrome      | 3.3276s  | +-6.87%  | 5          |
+|js-emcc-cwrap    | browserify  | firefox     | 15.1825s | +-4.49%  | 5          |
+|js-emcc-cwrap    | browserify  | safari      | 3.2950s  | +-3.63%  | 5          |
+|js-emcc-no-cwrap | browserify  | chrome      | 3.1465s  | +-10.33% | 5          |
+|js-emcc-no-cwrap | browserify  | firefox     | 2.0518s  | +-12.86% | 5          |
+|js-emcc-no-cwrap | browserify  | safari      | 3.1813s  | +-13.12% | 5          |

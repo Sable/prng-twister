@@ -1,8 +1,4 @@
 function runner(size) {
-    if (typeof server === 'undefined') {
-        server =  { done: function () {} }
-    }
-
     if (typeof performance === "undefined") {
         performance = Date;
     }
@@ -18,5 +14,4 @@ function runner(size) {
         time: (t2-t1)/1000,
         output: y
     }));
-    server.done();
 }

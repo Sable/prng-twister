@@ -1,0 +1,13 @@
+{
+    "type": "implementation",
+    "short-name":"js",
+    "description":"JS implemetentation using the ostrich-twister-prng",
+    "language":"js",
+    "core-source-files":[
+    ],
+    "runner-source-file": { "file": "./runner.js" },
+    "runner-arguments": [
+        { "expand": "/experiment/input-size" }
+    ],
+    "node-module-dependencies": { "file": "./node_modules" }
+}

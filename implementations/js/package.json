@@ -1,0 +1,7 @@
+{
+    "name": "prng-twister-js",
+    "version": "1.0.0",
+    "dependencies": {
+        "ostrich-twister-prng": "git://github.com/Sable/ostrich-twister-prng.js"
+    }
+}
